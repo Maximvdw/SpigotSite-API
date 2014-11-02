@@ -29,7 +29,7 @@ public interface ResourceManager {
 	 * by a {@link be.maximvdw.spigotsite.api.user.User}
 	 * 
 	 * @param user
-	 *            {@link be.maximvdw.spigotsite.api.user.User}
+	 *            Authenticated {@link be.maximvdw.spigotsite.api.user.User}
 	 * @return List of {@link be.maximvdw.spigotsite.api.resoure.Resource}
 	 */
 	public List<Resource> getBoughtResources(User user);

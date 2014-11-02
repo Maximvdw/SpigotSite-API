@@ -3,6 +3,8 @@ package be.maximvdw.spigotsite.api;
 public final class SpigotSite {
 	/* Spigot Site API */
 	private static SpigotSiteAPI api = null;
+	/* Spigot Site API Version */
+	private static String version = "0.0.1-SNAPSHOT";
 
 	/**
 	 * Get spigot site API
@@ -21,5 +23,14 @@ public final class SpigotSite {
 	 */
 	public static void setAPI(SpigotSiteAPI api) {
 		SpigotSite.api = api;
+	}
+
+	/**
+	 * Get spigot site API version
+	 * 
+	 * @return API version
+	 */
+	public static String getVersion() {
+		return version;
 	}
 }

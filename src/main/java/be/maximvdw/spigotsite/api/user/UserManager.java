@@ -13,6 +13,17 @@ public interface UserManager {
 	public User getUserById(int userid);
 
 	/**
+	 * Get {@link be.maximvdw.spigotsite.api.user.User} by identifier
+	 * 
+	 * @param userid
+	 *            User identifier
+	 * @param user
+	 *            Authenticated {@link be.maximvdw.spigotsite.api.user.User}
+	 * @return {@link be.maximvdw.spigotsite.api.user.User}
+	 */
+	public User getUserById(int userid, User user);
+
+	/**
 	 * Authenticate a spigot user
 	 * 
 	 * @param username
