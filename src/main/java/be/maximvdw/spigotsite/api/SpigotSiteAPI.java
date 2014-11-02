@@ -1,6 +1,6 @@
 package be.maximvdw.spigotsite.api;
 
-import be.maximvdw.spigotsite.api.user.SpigotUser;
+import be.maximvdw.spigotsite.api.user.User;
 import be.maximvdw.spigotsite.api.user.exceptions.AuthenticationFailureException;
 
 public interface SpigotSiteAPI {
@@ -13,7 +13,7 @@ public interface SpigotSiteAPI {
 	 *            Password
 	 * @return Authenticated Spigot user
 	 */
-	public SpigotUser authenticate(String username, String password)
+	public User authenticate(String username, String password)
 			throws AuthenticationFailureException;
 
 	/**
@@ -22,5 +22,5 @@ public interface SpigotSiteAPI {
 	 * @param user
 	 *            Authenticated Spigot user
 	 */
-	public void logOff(SpigotUser user);
+	public void logOff(User user);
 }

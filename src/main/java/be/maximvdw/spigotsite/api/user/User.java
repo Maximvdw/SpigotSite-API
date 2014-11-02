@@ -1,6 +1,6 @@
 package be.maximvdw.spigotsite.api.user;
 
-public interface SpigotUser{
+public interface User{
 	/**
 	 * Get spigot user identifier
 	 * 

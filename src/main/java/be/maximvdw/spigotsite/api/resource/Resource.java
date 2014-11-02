@@ -1,8 +1,8 @@
 package be.maximvdw.spigotsite.api.resource;
 
-import be.maximvdw.spigotsite.api.user.SpigotUser;
+import be.maximvdw.spigotsite.api.user.User;
 
-public interface SpigotResource {
+public interface Resource {
 	/**
 	 * Get resource identifier
 	 * 
@@ -18,6 +18,14 @@ public interface SpigotResource {
 	public String getResourceName();
 
 	/**
+	 * Set resource name
+	 * 
+	 * @param name
+	 *            Resource name
+	 */
+	public void setResourceName(String name);
+
+	/**
 	 * Get last resource version
 	 * 
 	 * @return Resource version
@@ -25,9 +33,17 @@ public interface SpigotResource {
 	public String getLastVersion();
 
 	/**
+	 * Set last resource version
+	 * 
+	 * @param version
+	 *            Resource version
+	 */
+	public void setLastVersion(String version);
+
+	/**
 	 * Get spigot author of resource
 	 * 
 	 * @return Spigot User
 	 */
-	public SpigotUser getAuthor();
+	public User getAuthor();
 }
