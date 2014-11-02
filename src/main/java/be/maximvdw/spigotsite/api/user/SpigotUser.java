@@ -1,4 +1,4 @@
-package be.maximvdw.spigotsiteapi.user;
+package be.maximvdw.spigotsite.api.user;
 
 public interface SpigotUser{
 	/**

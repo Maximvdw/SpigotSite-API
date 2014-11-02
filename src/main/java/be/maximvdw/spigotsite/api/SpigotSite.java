@@ -1,4 +1,4 @@
-package be.maximvdw.spigotsiteapi;
+package be.maximvdw.spigotsite.api;
 
 public final class SpigotSite {
 	/* Spigot Site API */

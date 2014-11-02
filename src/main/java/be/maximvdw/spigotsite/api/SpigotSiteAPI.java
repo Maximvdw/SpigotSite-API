@@ -1,7 +1,7 @@
-package be.maximvdw.spigotsiteapi;
+package be.maximvdw.spigotsite.api;
 
-import be.maximvdw.spigotsiteapi.user.SpigotUser;
-import be.maximvdw.spigotsiteapi.user.exceptions.AuthenticationFailureException;
+import be.maximvdw.spigotsite.api.user.SpigotUser;
+import be.maximvdw.spigotsite.api.user.exceptions.AuthenticationFailureException;
 
 public interface SpigotSiteAPI {
 	/**
