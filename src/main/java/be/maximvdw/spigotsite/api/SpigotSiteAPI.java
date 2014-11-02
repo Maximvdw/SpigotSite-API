@@ -1,26 +1,20 @@
 package be.maximvdw.spigotsite.api;
 
-import be.maximvdw.spigotsite.api.user.User;
-import be.maximvdw.spigotsite.api.user.exceptions.AuthenticationFailureException;
+import be.maximvdw.spigotsite.api.resource.ResourceManager;
+import be.maximvdw.spigotsite.api.user.UserManager;
 
 public interface SpigotSiteAPI {
 	/**
-	 * Authenticate a spigot user
+	 * Get spigot user manager
 	 * 
-	 * @param username
-	 *            Username or Email address
-	 * @param password
-	 *            Password
-	 * @return Authenticated Spigot user
+	 * @return {@link be.maximvdw.spigotsite.api.user.UserManager}
 	 */
-	public User authenticate(String username, String password)
-			throws AuthenticationFailureException;
+	public UserManager getUserManager();
 
 	/**
-	 * Log off a spigot user
+	 * Get spigot resource manager
 	 * 
-	 * @param user
-	 *            Authenticated Spigot user
+	 * @return {@link be.maximvdw.spigotsite.api.resource.ResourceManager}
 	 */
-	public void logOff(User user);
+	public ResourceManager getResourceManager();
 }
