@@ -46,4 +46,11 @@ public interface Resource {
 	 * @return Spigot User
 	 */
 	public User getAuthor();
+
+	/**
+	 * Get resource category
+	 * 
+	 * @return {@link be.maximvdw.spigotsite.api.resource.ResourceCategory}
+	 */
+	public ResourceCategory getResourceCategory();
 }
