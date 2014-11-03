@@ -1,6 +1,6 @@
 package be.maximvdw.spigotsite.api.user;
 
-import be.maximvdw.spigotsite.api.user.exceptions.AuthenticationFailureException;
+import be.maximvdw.spigotsite.api.user.exceptions.InvalidCredentialsException;
 
 public interface UserManager {
 	/**
@@ -33,7 +33,7 @@ public interface UserManager {
 	 * @return Authenticated Spigot user
 	 */
 	public User authenticate(String username, String password)
-			throws AuthenticationFailureException;
+			throws InvalidCredentialsException;
 
 	/**
 	 * Log off a spigot user
