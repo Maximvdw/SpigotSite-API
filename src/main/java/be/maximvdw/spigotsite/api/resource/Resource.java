@@ -53,4 +53,27 @@ public interface Resource {
 	 * @return {@link be.maximvdw.spigotsite.api.resource.ResourceCategory}
 	 */
 	public ResourceCategory getResourceCategory();
+	
+	/**
+	 * Get resource download URL
+	 * 
+	 * @return Download URL
+	 */
+	public String getDownloadURL();
+
+	/**
+	 * Download the resource
+	 * 
+	 * @param output
+	 *            Download URL
+	 * @return Downloaded file
+	 */
+	public File downloadResource(File output);
+
+	/**
+	 * Is the resource deleted
+	 * 
+	 * @return Deleted resource
+	 */
+	public boolean isDeleted();
 }
