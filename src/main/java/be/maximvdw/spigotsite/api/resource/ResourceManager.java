@@ -32,7 +32,7 @@ public interface ResourceManager {
 	 *            Authenticated {@link be.maximvdw.spigotsite.api.user.User}
 	 * @return List of {@link be.maximvdw.spigotsite.api.resoure.Resource}
 	 */
-	public List<Resource> getBoughtResources(User user);
+	public List<Resource> getPurchasedResources(User user);
 
 	/**
 	 * Get resource categories on spigot

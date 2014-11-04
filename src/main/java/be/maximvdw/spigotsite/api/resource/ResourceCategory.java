@@ -23,4 +23,11 @@ public interface ResourceCategory {
 	 * @return List of {@link be.maximvdw.spigotsite.api.resource.Resource}
 	 */
 	public List<Resource> getResources();
+
+	/**
+	 * Get amount of resources
+	 * 
+	 * @return Resources count
+	 */
+	public int getResourceCount();
 }

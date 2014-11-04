@@ -1,6 +1,10 @@
 package be.maximvdw.spigotsite.api.user;
 
-public interface User{
+import java.util.List;
+
+import be.maximvdw.spigotsite.api.resource.Resource;
+
+public interface User {
 	/**
 	 * Get spigot user identifier
 	 * 
@@ -14,4 +18,18 @@ public interface User{
 	 * @return Spigot username
 	 */
 	public String getUsername();
+
+	/**
+	 * Get purchased resources
+	 * 
+	 * @return List of {@link be.maximvdw.spigotsite.api.resource.Resource}
+	 */
+	public List<Resource> getPurchasedResources();
+
+	/**
+	 * Get created resources
+	 * 
+	 * @return List of {@link be.maximvdw.spigotsite.api.resource.Resource}
+	 */
+	public List<Resource> getCreatedResources();
 }
