@@ -41,4 +41,13 @@ public interface ResourceManager {
 	 *         {@link be.maximvdw.spigotsite.api.resource.ResourceCategory}
 	 */
 	public List<ResourceCategory> getResourceCategories();
+
+	/**
+	 * Get all resources from a specific category
+	 * 
+	 * @param category
+	 *            List of {@link be.maximvdw.spigotsite.api.resource.Resource}
+	 * @return
+	 */
+	public List<Resource> getResourcesByCategory(ResourceCategory category);
 }
