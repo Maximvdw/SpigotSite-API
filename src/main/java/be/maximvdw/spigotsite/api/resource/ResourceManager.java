@@ -20,7 +20,7 @@ public interface ResourceManager {
 	 * 
 	 * @param user
 	 *            {@link be.maximvdw.spigotsite.api.user.User}
-	 * @return List of {@link be.maximvdw.spigotsite.api.resoure.Resource}
+	 * @return List of {@link be.maximvdw.spigotsite.api.resource.Resource}
 	 */
 	public List<Resource> getResourcesByUser(User user);
 
@@ -30,7 +30,7 @@ public interface ResourceManager {
 	 * 
 	 * @param user
 	 *            Authenticated {@link be.maximvdw.spigotsite.api.user.User}
-	 * @return List of {@link be.maximvdw.spigotsite.api.resoure.Resource}
+	 * @return List of {@link be.maximvdw.spigotsite.api.resource.Resource}
 	 */
 	public List<Resource> getPurchasedResources(User user);
 
