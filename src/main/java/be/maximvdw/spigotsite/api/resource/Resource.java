@@ -4,6 +4,11 @@ import java.io.File;
 
 import be.maximvdw.spigotsite.api.user.User;
 
+/**
+ * Spigot Resource
+ * 
+ * @author Maxim Van de Wynckel
+ */
 public interface Resource {
 	/**
 	 * Get resource identifier
@@ -55,7 +60,7 @@ public interface Resource {
 	 * @return {@link be.maximvdw.spigotsite.api.resource.ResourceCategory}
 	 */
 	public ResourceCategory getResourceCategory();
-	
+
 	/**
 	 * Get resource download URL
 	 * 

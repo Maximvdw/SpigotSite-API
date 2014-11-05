@@ -4,6 +4,11 @@ import java.util.List;
 
 import be.maximvdw.spigotsite.api.user.User;
 
+/**
+ * Spigot Resource Manager
+ * 
+ * @author Maxim Van de Wynckel
+ */
 public interface ResourceManager {
 	/**
 	 * Get a {@link be.maximvdw.spigotsite.api.resource.Resource} by identifier

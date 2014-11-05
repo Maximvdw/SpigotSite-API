@@ -2,6 +2,11 @@ package be.maximvdw.spigotsite.api.user;
 
 import be.maximvdw.spigotsite.api.user.exceptions.InvalidCredentialsException;
 
+/**
+ * Spigot User Manager
+ * 
+ * @author Maxim Van de Wynckel
+ */
 public interface UserManager {
 	/**
 	 * Get {@link be.maximvdw.spigotsite.api.user.User} by identifier

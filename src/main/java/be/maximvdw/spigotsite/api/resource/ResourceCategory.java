@@ -2,6 +2,11 @@ package be.maximvdw.spigotsite.api.resource;
 
 import java.util.List;
 
+/**
+ * Spigot Resource Category
+ * 
+ * @author Maxim Van de Wynckel
+ */
 public interface ResourceCategory {
 	/**
 	 * Get resource category identifier

@@ -4,6 +4,11 @@ import java.util.List;
 
 import be.maximvdw.spigotsite.api.resource.Resource;
 
+/**
+ * Spigot User
+ * 
+ * @author Maxim Van de Wynckel
+ */
 public interface User {
 	/**
 	 * Get spigot user identifier
