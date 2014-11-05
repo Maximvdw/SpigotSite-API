@@ -7,7 +7,7 @@ import be.maximvdw.spigotsite.api.user.User;
  * 
  * @author Maxim Van de Wynckel
  */
-public interface Reply {
+public interface Post {
 	/**
 	 * Get the author of the reply
 	 * 

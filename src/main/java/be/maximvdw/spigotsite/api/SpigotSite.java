@@ -5,8 +5,6 @@ public final class SpigotSite {
 	private static SpigotSiteAPI api = null;
 	/* Spigot Site API Version */
 	private static String version = "0.0.3-SNAPSHOT";
-	/* Cache timeout */
-	private static int cacheTTL = 3600;
 
 	/**
 	 * Get spigot site API
@@ -34,24 +32,5 @@ public final class SpigotSite {
 	 */
 	public static String getVersion() {
 		return version;
-	}
-
-	/**
-	 * Get cache timeout for persistent data
-	 * 
-	 * @return Cache timeout
-	 */
-	public static int getCacheTimeout() {
-		return cacheTTL;
-	}
-
-	/**
-	 * Set cache timeout for persistent data
-	 * 
-	 * @param cacheTTL
-	 *            Cache timeout
-	 */
-	public static void setCacheTimeout(int cacheTTL) {
-		SpigotSite.cacheTTL = cacheTTL;
 	}
 }

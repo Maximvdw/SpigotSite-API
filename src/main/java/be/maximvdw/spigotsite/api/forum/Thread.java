@@ -13,9 +13,16 @@ public interface Thread {
 	/**
 	 * Get thread replies
 	 * 
-	 * @return List of {@link be.maximvdw.spigotsite.api.forum.Reply}
+	 * @return List of {@link be.maximvdw.spigotsite.api.forum.Post}
 	 */
-	public List<Reply> getReplies();
+	public List<Post> getReplies();
+
+	/**
+	 * Get original post
+	 * 
+	 * @return {@link be.maximvdw.spigotsite.api.forum.Post}
+	 */
+	public Post getOriginalPost();
 
 	/**
 	 * Get thread creator
