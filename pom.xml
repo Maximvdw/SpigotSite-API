@@ -25,7 +25,11 @@
 				</configuration>
 				<executions>
 					<execution>
-						<id>attach-javadocs</id>
+						<id>aggregate</id>
+						<goals>
+							<goal>aggregate</goal>
+						</goals>
+						<phase>package</phase>
 						<configuration>
 							<show>public</show>
 						</configuration>
