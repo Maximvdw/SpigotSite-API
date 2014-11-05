@@ -48,6 +48,16 @@ public interface ResourceManager {
 	public List<ResourceCategory> getResourceCategories();
 
 	/**
+	 * Get {@link be.maximvdw.spigotsite.api.resource.ResourceCategory} by
+	 * identifier
+	 * 
+	 * @param id
+	 *            Resource Category identifier
+	 * @return Resource Category
+	 */
+	public ResourceCategory getResourceCategoryById(int id);
+
+	/**
 	 * Get all resources from a specific category
 	 * 
 	 * @param category
