@@ -1,5 +1,7 @@
 package be.maximvdw.spigotsite.api.user;
 
+import java.util.List;
+
 import be.maximvdw.spigotsite.api.user.exceptions.InvalidCredentialsException;
 
 /**
@@ -47,4 +49,19 @@ public interface UserManager {
 	 *            Authenticated Spigot user
 	 */
 	public void logOff(User user);
+
+	/**
+	 * Get user ranks
+	 * 
+	 * @return List of {@link be.maximvdw.spigotsite.api.user.UserRank}
+	 */
+	public List<UserRank> getUserRanks();
+
+	/**
+	 * Get users by rank
+	 * 
+	 * @param rank
+	 * @return List of {@link be.maximvdw.spigotsite.api.user.User}
+	 */
+	public List<User> getUsersByRank(UserRank rank);
 }
