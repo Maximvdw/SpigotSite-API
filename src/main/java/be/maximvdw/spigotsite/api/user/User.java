@@ -37,4 +37,11 @@ public interface User {
 	 * @return List of {@link be.maximvdw.spigotsite.api.resource.Resource}
 	 */
 	public List<Resource> getCreatedResources();
+
+	/**
+	 * Get spigot user statistics
+	 * 
+	 * @return {@link be.maximvdw.spigotsite.api.user.UserStatistics}
+	 */
+	public UserStatistics getUserStatistics();
 }
