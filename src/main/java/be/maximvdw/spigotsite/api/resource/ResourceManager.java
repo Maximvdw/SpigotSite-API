@@ -30,6 +30,16 @@ public interface ResourceManager {
 	public List<Resource> getResourcesByUser(User user);
 
 	/**
+	 * Get a list of {@link be.maximvdw.spigotsite.api.resource.Resource} from a
+	 * {@link be.maximvdw.spigotsite.api.user.User}
+	 * 
+	 * @param id
+	 *            User identifier
+	 * @return List of {@link be.maximvdw.spigotsite.api.resource.Resource}
+	 */
+	public List<Resource> getResourcesByUser(int id);
+
+	/**
 	 * Get a list of {@link be.maximvdw.spigotsite.api.resource.Resource} bought
 	 * by a {@link be.maximvdw.spigotsite.api.user.User}
 	 * 
