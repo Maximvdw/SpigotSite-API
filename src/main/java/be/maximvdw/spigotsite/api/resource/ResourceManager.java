@@ -75,4 +75,22 @@ public interface ResourceManager {
 	 * @return
 	 */
 	public List<Resource> getResourcesByCategory(ResourceCategory category);
+
+	/**
+	 * Get the last version of a resource
+	 * 
+	 * @param resourceid
+	 *            Resource identifier
+	 * @return Version string
+	 */
+	public String getLastVersion(int resourceid);
+
+	/**
+	 * Get premium resource buyers
+	 * 
+	 * @param resource
+	 *            Premium resource
+	 * @return
+	 */
+	public List<User> getPremiumResourceBuyers(PremiumResource resource);
 }

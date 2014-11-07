@@ -35,4 +35,11 @@ public interface PremiumResource extends Resource {
 	 *            Price currency
 	 */
 	public void setPriceCurrency(String currency);
+
+	/**
+	 * Get premium resource buyers
+	 * 
+	 * @return Resource buyers
+	 */
+	public List<User> getBuyers();
 }
