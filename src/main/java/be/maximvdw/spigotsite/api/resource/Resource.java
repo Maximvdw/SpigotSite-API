@@ -1,6 +1,7 @@
 package be.maximvdw.spigotsite.api.resource;
 
 import java.io.File;
+import java.util.List;
 
 import be.maximvdw.spigotsite.api.user.User;
 
@@ -83,4 +84,26 @@ public interface Resource {
 	 * @return Deleted resource
 	 */
 	public boolean isDeleted();
+
+	/**
+	 * Get resource average rating
+	 * 
+	 * @return Resource rating
+	 */
+	public int getAverageRating();
+
+	/**
+	 * Get resource ratings
+	 * 
+	 * @return List of {@link be.maximvdw.spigotsite.api.resource.Rating}
+	 */
+	public List<Rating> getRatings();
+
+	/**
+	 * Get rersource updates
+	 * 
+	 * @return List of
+	 *         {@link be.maximvdw.spigotsite.api.resource.ResourceUpdate}
+	 */
+	public List<ResourceUpdate> gerResourceUpdates();
 }
