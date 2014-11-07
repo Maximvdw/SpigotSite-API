@@ -1,5 +1,9 @@
 package be.maximvdw.spigotsite.api.resource;
 
+import java.util.List;
+
+import be.maximvdw.spigotsite.api.user.User;
+
 /**
  * Spigot Premium Resource
  * 
