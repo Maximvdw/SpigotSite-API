@@ -93,4 +93,65 @@ public interface ResourceManager {
 	 * @return
 	 */
 	public List<User> getPremiumResourceBuyers(PremiumResource resource);
+
+	/**
+	 * Add a buyer to a spigot premium resource
+	 * 
+	 * @param resource
+	 *            Premium resource
+	 * @param user
+	 *            The authenticated plugin author
+	 * @param buyer
+	 *            The buyer
+	 */
+	public void addBuyer(PremiumResource resource, User user, User buyer);
+
+	/**
+	 * Add a buyer to a spigot premium resource
+	 * 
+	 * @param resource
+	 *            Premium resource
+	 * @param user
+	 *            The authenticated plugin author
+	 * @param userid
+	 *            User identifier
+	 */
+	public void addBuyer(PremiumResource resource, User user, int userid);
+
+	/**
+	 * Add a buyer to a spigot premium resource
+	 * 
+	 * @param resource
+	 *            Premium resource
+	 * @param user
+	 *            The authenticated plugin author
+	 * @param username
+	 *            The text username
+	 */
+	public void addBuyer(PremiumResource resource, User user, String username);
+
+	/**
+	 * Add a buyer to a spigot premium resource
+	 * 
+	 * @param resource
+	 *            Premium resource
+	 * @param user
+	 *            The authenticated plugin author
+	 * @param buyers
+	 *            A list of buyers
+	 */
+	public void addBuyers(PremiumResource resource, User user, List<User> buyers);
+
+	/**
+	 * Add a buyer to a spigot premium resource
+	 * 
+	 * @param resource
+	 *            Premium resource
+	 * @param user
+	 *            The authenticated plugin author
+	 * @param usernames
+	 *            A list of usernames
+	 */
+	public void addBuyers(PremiumResource resource, User user,
+			String[] usernames);
 }
