@@ -90,9 +90,12 @@ public interface ResourceManager {
 	 * 
 	 * @param resource
 	 *            Premium resource
-	 * @return
+	 * @param user
+	 *            The authenticated author of the plugin
+	 * @return List of {@link be.maximvdw.spigotsite.api.user.User}
 	 */
-	public List<User> getPremiumResourceBuyers(PremiumResource resource);
+	public List<User> getPremiumResourceBuyers(PremiumResource resource,
+			User user);
 
 	/**
 	 * Add a buyer to a spigot premium resource

@@ -23,6 +23,15 @@ public interface User {
 	 * @return Spigot username
 	 */
 	public String getUsername();
+	
+	/**
+	 * Determine if the spigot user
+	 * is authenticated and can be used to perform
+	 * private actions.
+	 * 
+	 * @return is Authenticated
+	 */
+	public boolean isAuthenticated();
 
 	/**
 	 * Get purchased resources
