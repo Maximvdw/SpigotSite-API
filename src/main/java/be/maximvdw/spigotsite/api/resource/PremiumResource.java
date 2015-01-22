@@ -46,4 +46,54 @@ public interface PremiumResource extends Resource {
 	 * @return Resource buyers
 	 */
 	public List<User> getBuyers();
+
+	/**
+	 * Add a buyer to a spigot premium resource
+	 * 
+	 * @param user
+	 *            The authenticated plugin author
+	 * @param buyer
+	 *            The buyer
+	 */
+	public void addBuyer(User user, User buyer);
+
+	/**
+	 * Add a buyer to a spigot premium resource
+	 * 
+	 * @param user
+	 *            The authenticated plugin author
+	 * @param userid
+	 *            User identifier
+	 */
+	public void addBuyer(User user, int userid);
+
+	/**
+	 * Add a buyer to a spigot premium resource
+	 * 
+	 * @param user
+	 *            The authenticated plugin author
+	 * @param username
+	 *            The text username
+	 */
+	public void addBuyer(User user, String username);
+
+	/**
+	 * Add a buyer to a spigot premium resource
+	 * 
+	 * @param user
+	 *            The authenticated plugin author
+	 * @param buyers
+	 *            A list of buyers
+	 */
+	public void addBuyers(User user, List<User> buyers);
+
+	/**
+	 * Add a buyer to a spigot premium resource
+	 * 
+	 * @param user
+	 *            The authenticated plugin author
+	 * @param usernames
+	 *            A list of usernames
+	 */
+	public void addBuyers(User user, String[] usernames);
 }
