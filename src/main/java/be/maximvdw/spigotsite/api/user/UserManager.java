@@ -64,4 +64,14 @@ public interface UserManager {
 	 * @return List of {@link be.maximvdw.spigotsite.api.user.User}
 	 */
 	public List<User> getUsersByRank(UserRank rank);
+
+	/**
+	 * Get conversations of user
+	 * 
+	 * @param user
+	 *            Authenticated {@link be.maximvdw.spigotsite.api.user.User}
+	 * @param count
+	 * @return List of {@link be.maximvdw.spigotsite.api.user.Conversation}
+	 */
+	public List<Conversation> getConversations(User user, int count);
 }
