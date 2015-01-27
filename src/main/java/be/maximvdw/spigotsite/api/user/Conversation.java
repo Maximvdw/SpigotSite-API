@@ -10,6 +10,13 @@ import java.util.List;
 public interface Conversation {
 
 	/**
+	 * Get the conversation ID
+	 * 
+	 * @return ID
+	 */
+	public int getConverationId();
+
+	/**
 	 * Get author of the conversation
 	 * 
 	 * @return Author user
