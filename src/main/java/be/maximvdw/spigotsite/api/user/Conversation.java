@@ -36,4 +36,14 @@ public interface Conversation {
 	 * @return Title
 	 */
 	public String getTitle();
+
+	/**
+	 * Reply to the conversation
+	 * 
+	 * @param user
+	 *            User that is replying
+	 * @param bbCode
+	 *            BB Code string
+	 */
+	public void reply(User user, String bbCode);
 }

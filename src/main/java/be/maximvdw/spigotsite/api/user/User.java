@@ -23,10 +23,9 @@ public interface User {
 	 * @return Spigot username
 	 */
 	public String getUsername();
-	
+
 	/**
-	 * Determine if the spigot user
-	 * is authenticated and can be used to perform
+	 * Determine if the spigot user is authenticated and can be used to perform
 	 * private actions.
 	 * 
 	 * @return is Authenticated
@@ -53,4 +52,11 @@ public interface User {
 	 * @return {@link be.maximvdw.spigotsite.api.user.UserStatistics}
 	 */
 	public UserStatistics getUserStatistics();
+
+	/**
+	 * Get spigot user private conversations
+	 * 
+	 * @return List of conversation
+	 */
+	public List<Conversation> getConversations();
 }
