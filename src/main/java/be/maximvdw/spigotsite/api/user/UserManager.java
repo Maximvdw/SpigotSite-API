@@ -87,4 +87,14 @@ public interface UserManager {
 	 */
 	public void replyToConversation(Conversation conversation, User user,
 			String reply);
+
+	/**
+	 * Leave a conversation
+	 * 
+	 * @param conversation
+	 *            Conversation
+	 * @param user
+	 *            Authenticated user
+	 */
+	public void leaveConversation(Conversation conversation, User user);
 }

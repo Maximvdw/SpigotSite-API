@@ -17,6 +17,13 @@ public interface Conversation {
 	public int getConverationId();
 
 	/**
+	 * Get the reply cout
+	 * 
+	 * @return Reply count
+	 */
+	public int getRepliesCount();
+
+	/**
 	 * Get author of the conversation
 	 * 
 	 * @return Author user
@@ -46,4 +53,12 @@ public interface Conversation {
 	 *            BB Code string
 	 */
 	public void reply(User user, String bbCode);
+
+	/**
+	 * Leave the conversation
+	 * 
+	 * @param user
+	 *            Authenticated user
+	 */
+	public void leave(User user);
 }
