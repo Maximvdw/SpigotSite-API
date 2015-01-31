@@ -2,6 +2,7 @@ package be.maximvdw.spigotsite.api;
 
 import be.maximvdw.spigotsite.api.forum.ForumManager;
 import be.maximvdw.spigotsite.api.resource.ResourceManager;
+import be.maximvdw.spigotsite.api.user.ConversationManager;
 import be.maximvdw.spigotsite.api.user.UserManager;
 
 /**
@@ -30,4 +31,11 @@ public interface SpigotSiteAPI {
 	 * @return {@link be.maximvdw.spigotsite.api.forum.ForumManager}
 	 */
 	public ForumManager getForumManager();
+
+	/**
+	 * Get spigot conversation manager
+	 * 
+	 * @return {@link be.maximvdw.spigotsite.api.user.ConversationManager}
+	 */
+	public ConversationManager getConversationManager();
 }

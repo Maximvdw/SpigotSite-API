@@ -64,37 +64,4 @@ public interface UserManager {
 	 * @return List of {@link be.maximvdw.spigotsite.api.user.User}
 	 */
 	public List<User> getUsersByRank(UserRank rank);
-
-	/**
-	 * Get conversations of user
-	 * 
-	 * @param user
-	 *            Authenticated {@link be.maximvdw.spigotsite.api.user.User}
-	 * @param count
-	 * @return List of {@link be.maximvdw.spigotsite.api.user.Conversation}
-	 */
-	public List<Conversation> getConversations(User user, int count);
-
-	/**
-	 * Reply to a converation
-	 * 
-	 * @param conversation
-	 *            Conversation
-	 * @param user
-	 *            Authenticated user
-	 * @param reply
-	 *            Reply BB Code
-	 */
-	public void replyToConversation(Conversation conversation, User user,
-			String reply);
-
-	/**
-	 * Leave a conversation
-	 * 
-	 * @param conversation
-	 *            Conversation
-	 * @param user
-	 *            Authenticated user
-	 */
-	public void leaveConversation(Conversation conversation, User user);
 }
