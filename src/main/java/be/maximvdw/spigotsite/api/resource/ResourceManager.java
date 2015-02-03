@@ -2,6 +2,7 @@ package be.maximvdw.spigotsite.api.resource;
 
 import java.util.List;
 
+import be.maximvdw.spigotsite.api.exceptions.ConnectionFailedException;
 import be.maximvdw.spigotsite.api.user.User;
 
 /**
@@ -47,7 +48,8 @@ public interface ResourceManager {
 	 *            Authenticated {@link be.maximvdw.spigotsite.api.user.User}
 	 * @return List of {@link be.maximvdw.spigotsite.api.resource.Resource}
 	 */
-	public List<Resource> getPurchasedResources(User user);
+	public List<Resource> getPurchasedResources(User user)
+			throws ConnectionFailedException;
 
 	/**
 	 * Get resource categories on spigot
@@ -95,7 +97,7 @@ public interface ResourceManager {
 	 * @return List of {@link be.maximvdw.spigotsite.api.user.User}
 	 */
 	public List<User> getPremiumResourceBuyers(PremiumResource resource,
-			User user);
+			User user) throws ConnectionFailedException;
 
 	/**
 	 * Add a buyer to a spigot premium resource

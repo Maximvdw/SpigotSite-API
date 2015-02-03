@@ -3,6 +3,7 @@ package be.maximvdw.spigotsite.api.user;
 import java.util.List;
 import java.util.Set;
 
+import be.maximvdw.spigotsite.api.exceptions.ConnectionFailedException;
 import be.maximvdw.spigotsite.api.exceptions.SpamWarningException;
 
 public interface ConversationManager {
@@ -14,7 +15,8 @@ public interface ConversationManager {
 	 * @param count
 	 * @return List of {@link be.maximvdw.spigotsite.api.user.Conversation}
 	 */
-	public List<Conversation> getConversations(User user, int count);
+	public List<Conversation> getConversations(User user, int count)
+			throws ConnectionFailedException;
 
 	/**
 	 * Reply to a converation
