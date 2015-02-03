@@ -3,6 +3,8 @@ package be.maximvdw.spigotsite.api.user;
 import java.util.List;
 import java.util.Set;
 
+import be.maximvdw.spigotsite.api.exceptions.SpamWarningException;
+
 public interface ConversationManager {
 	/**
 	 * Get conversations of user
@@ -25,7 +27,7 @@ public interface ConversationManager {
 	 *            Reply BB Code
 	 */
 	public void replyToConversation(Conversation conversation, User user,
-			String reply);
+			String reply) throws SpamWarningException;
 
 	/**
 	 * Leave a conversation
@@ -58,5 +60,5 @@ public interface ConversationManager {
 	 */
 	public Conversation createConversation(User user, Set<String> recipents,
 			String title, String body, boolean locked, boolean invite,
-			boolean sticky);
+			boolean sticky) throws SpamWarningException;
 }

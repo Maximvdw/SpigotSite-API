@@ -2,6 +2,8 @@ package be.maximvdw.spigotsite.api.user;
 
 import java.util.List;
 
+import be.maximvdw.spigotsite.api.exceptions.SpamWarningException;
+
 /**
  * Spigot Conversation
  * 
@@ -51,7 +53,7 @@ public interface Conversation {
 	 * @param bbCode
 	 *            BB Code string
 	 */
-	public void reply(User user, String bbCode);
+	public void reply(User user, String bbCode) throws SpamWarningException;
 
 	/**
 	 * Leave the conversation
