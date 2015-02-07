@@ -20,6 +20,15 @@ public interface UserManager {
 	public User getUserById(int userid);
 
 	/**
+	 * Get a list of users by their name
+	 * 
+	 * @param name
+	 *            Name
+	 * @return List of users
+	 */
+	public List<User> getUsersByName(String name);
+
+	/**
 	 * Get {@link be.maximvdw.spigotsite.api.user.User} by identifier
 	 * 
 	 * @param userid
