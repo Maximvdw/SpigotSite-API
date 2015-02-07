@@ -2,6 +2,7 @@ package be.maximvdw.spigotsite.api.user;
 
 import java.util.List;
 
+import be.maximvdw.spigotsite.api.exceptions.ConnectionFailedException;
 import be.maximvdw.spigotsite.api.resource.Resource;
 
 /**
@@ -36,8 +37,10 @@ public interface User {
 	 * Get purchased resources
 	 * 
 	 * @return List of {@link be.maximvdw.spigotsite.api.resource.Resource}
+	 * @throws ConnectionFailedException
 	 */
-	public List<Resource> getPurchasedResources();
+	public List<Resource> getPurchasedResources()
+			throws ConnectionFailedException;
 
 	/**
 	 * Get created resources
