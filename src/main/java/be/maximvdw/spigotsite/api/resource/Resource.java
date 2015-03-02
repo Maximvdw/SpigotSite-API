@@ -76,7 +76,7 @@ public interface Resource {
 	 *            Download URL
 	 * @return Downloaded file
 	 */
-	public File downloadResource(File output);
+	public File downloadResource(User user, File output);
 
 	/**
 	 * Is the resource deleted
