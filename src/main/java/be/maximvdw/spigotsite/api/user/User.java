@@ -62,4 +62,11 @@ public interface User {
 	 * @return List of conversation
 	 */
 	public List<Conversation> getConversations();
+
+	/**
+	 * Get users last activity
+	 * 
+	 * @return Last activity string
+	 */
+	public String getLastActivity();
 }
