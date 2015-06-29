@@ -73,4 +73,11 @@ public interface UserManager {
 	 * @return List of {@link be.maximvdw.spigotsite.api.user.User}
 	 */
 	public List<User> getUsersByRank(UserRank rank);
+
+	/**
+	 * Get online members
+	 * 
+	 * @return List of members
+	 */
+	public List<User> getOnlineUsers();
 }
