@@ -1,5 +1,6 @@
 package be.maximvdw.spigotsite.api.user;
 
+import java.util.Date;
 import java.util.List;
 
 import be.maximvdw.spigotsite.api.exceptions.SpamWarningException;
@@ -44,6 +45,27 @@ public interface Conversation {
 	 * @return Title
 	 */
 	public String getTitle();
+
+	/**
+	 * Get if the conversation us unread
+	 *
+	 * @return Unread status
+	 */
+	public boolean isUnread();
+
+	/**
+	 * Get the last replier
+	 *
+	 * @return The last User to reply.
+	 */
+	public User getLastReplier();
+
+	/**
+	 * Get the last reply date
+	 *
+	 * @return The date of the last reply.
+	 */
+	public Date getLastReplyDate();
 
 	/**
 	 * Reply to the conversation
