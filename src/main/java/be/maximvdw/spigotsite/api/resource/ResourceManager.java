@@ -19,6 +19,16 @@ public interface ResourceManager {
 	 * @return Spigot Resource
 	 */
 	public Resource getResourceById(int resourceid);
+	
+	/**
+	 * Get a {@link be.maximvdw.spigotsite.api.resource.Resource} by identifier
+	 * 
+	 * @param resourceid
+	 *            Resource identifier
+	 * @param user Authenticated spigot user
+	 * @return Spigot Resource
+	 */
+	public Resource getResourceById(int resourceid,User user);
 
 	/**
 	 * Get a list of {@link be.maximvdw.spigotsite.api.resource.Resource} from a
