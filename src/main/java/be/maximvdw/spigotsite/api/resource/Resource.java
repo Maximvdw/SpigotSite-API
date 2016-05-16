@@ -1,9 +1,9 @@
 package be.maximvdw.spigotsite.api.resource;
 
+import be.maximvdw.spigotsite.api.user.User;
+
 import java.io.File;
 import java.util.List;
-
-import be.maximvdw.spigotsite.api.user.User;
 
 /**
  * Spigot Resource
@@ -105,5 +105,5 @@ public interface Resource {
 	 * @return List of
 	 *         {@link be.maximvdw.spigotsite.api.resource.ResourceUpdate}
 	 */
-	public List<ResourceUpdate> gerResourceUpdates();
+	public List<ResourceUpdate> getResourceUpdates();
 }
