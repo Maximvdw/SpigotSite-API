@@ -16,14 +16,14 @@ public interface User {
 	 * 
 	 * @return Spigot user identifier
 	 */
-	public int getUserId();
+	int getUserId();
 
 	/**
 	 * Get spigot username
 	 * 
 	 * @return Spigot username
 	 */
-	public String getUsername();
+	String getUsername();
 
 	/**
 	 * Determine if the spigot user is authenticated and can be used to perform
@@ -31,7 +31,7 @@ public interface User {
 	 * 
 	 * @return is Authenticated
 	 */
-	public boolean isAuthenticated();
+	boolean isAuthenticated();
 
 	/**
 	 * Get purchased resources
@@ -39,7 +39,7 @@ public interface User {
 	 * @return List of {@link be.maximvdw.spigotsite.api.resource.Resource}
 	 * @throws ConnectionFailedException
 	 */
-	public List<Resource> getPurchasedResources()
+	List<Resource> getPurchasedResources()
 			throws ConnectionFailedException;
 
 	/**
@@ -47,26 +47,26 @@ public interface User {
 	 * 
 	 * @return List of {@link be.maximvdw.spigotsite.api.resource.Resource}
 	 */
-	public List<Resource> getCreatedResources();
+	List<Resource> getCreatedResources();
 
 	/**
 	 * Get spigot user statistics
 	 * 
 	 * @return {@link be.maximvdw.spigotsite.api.user.UserStatistics}
 	 */
-	public UserStatistics getUserStatistics();
+	UserStatistics getUserStatistics();
 
 	/**
 	 * Get spigot user private conversations
 	 * 
 	 * @return List of conversation
 	 */
-	public List<Conversation> getConversations();
+	List<Conversation> getConversations();
 
 	/**
 	 * Get users last activity
 	 * 
 	 * @return Last activity string
 	 */
-	public String getLastActivity();
+	String getLastActivity();
 }
