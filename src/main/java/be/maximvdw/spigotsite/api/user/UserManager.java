@@ -3,6 +3,7 @@ package be.maximvdw.spigotsite.api.user;
 import java.util.List;
 
 import be.maximvdw.spigotsite.api.user.exceptions.InvalidCredentialsException;
+import be.maximvdw.spigotsite.api.user.exceptions.TwoFactorAuthenticationException;
 
 /**
  * Spigot User Manager
@@ -43,7 +44,7 @@ public interface UserManager {
      * @return Authenticated Spigot user
      */
     User authenticate(String username, String password)
-            throws InvalidCredentialsException;
+            throws InvalidCredentialsException, TwoFactorAuthenticationException;
 
     /**
      * Authenticate a spigot user
@@ -54,7 +55,7 @@ public interface UserManager {
      * @return Authenticated Spigot user
      */
     User authenticate(String username, String password, String twoFactorAuthenticationSecret)
-            throws InvalidCredentialsException;
+            throws InvalidCredentialsException, TwoFactorAuthenticationException;
 
     /**
      * Log off a spigot user
