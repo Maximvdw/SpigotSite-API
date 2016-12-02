@@ -16,56 +16,56 @@ public interface Conversation {
 	 * 
 	 * @return ID
 	 */
-	public int getConverationId();
+	int getConverationId();
 
 	/**
 	 * Get the reply cout
 	 * 
 	 * @return Reply count
 	 */
-	public int getRepliesCount();
+	int getRepliesCount();
 
 	/**
 	 * Get author of the conversation
 	 * 
 	 * @return Author user
 	 */
-	public User getAuthor();
+	User getAuthor();
 
 	/**
 	 * Get a list of all the participants
 	 * 
 	 * @return List of participants
 	 */
-	public List<User> getParticipants();
+	List<User> getParticipants();
 
 	/**
 	 * Get conversation title
 	 * 
 	 * @return Title
 	 */
-	public String getTitle();
+	String getTitle();
 
 	/**
 	 * Get if the conversation us unread
 	 *
 	 * @return Unread status
 	 */
-	public boolean isUnread();
+	boolean isUnread();
 
 	/**
 	 * Get the last replier
 	 *
 	 * @return The last User to reply.
 	 */
-	public User getLastReplier();
+	User getLastReplier();
 
 	/**
 	 * Get the last reply date
 	 *
 	 * @return The date of the last reply.
 	 */
-	public Date getLastReplyDate();
+	Date getLastReplyDate();
 
 	/**
 	 * Reply to the conversation
@@ -75,7 +75,7 @@ public interface Conversation {
 	 * @param bbCode
 	 *            BB Code string
 	 */
-	public void reply(User user, String bbCode) throws SpamWarningException;
+	void reply(User user, String bbCode) throws SpamWarningException;
 
 	/**
 	 * Leave the conversation
@@ -83,5 +83,5 @@ public interface Conversation {
 	 * @param user
 	 *            Authenticated user
 	 */
-	public void leave(User user);
+	void leave(User user);
 }

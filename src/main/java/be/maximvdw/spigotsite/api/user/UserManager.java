@@ -65,6 +65,14 @@ public interface UserManager {
     void logOff(User user);
 
     /**
+     * Check if the user is logged in
+     *
+     * @param user User to check
+     * @return logged in boolean
+     */
+    boolean isLoggedIn(User user);
+
+    /**
      * Get user ranks
      *
      * @return List of {@link be.maximvdw.spigotsite.api.user.UserRank}
