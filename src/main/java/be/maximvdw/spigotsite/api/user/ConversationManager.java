@@ -15,7 +15,7 @@ public interface ConversationManager {
 	 * @param count
 	 * @return List of {@link be.maximvdw.spigotsite.api.user.Conversation}
 	 */
-	public List<Conversation> getConversations(User user, int count)
+	List<Conversation> getConversations(User user, int count)
 			throws ConnectionFailedException;
 
 	/**
@@ -28,8 +28,8 @@ public interface ConversationManager {
 	 * @param reply
 	 *            Reply BB Code
 	 */
-	public void replyToConversation(Conversation conversation, User user,
-			String reply) throws SpamWarningException;
+	void replyToConversation(Conversation conversation, User user,
+							 String reply) throws SpamWarningException;
 
 	/**
 	 * Leave a conversation
@@ -39,7 +39,7 @@ public interface ConversationManager {
 	 * @param user
 	 *            Authenticated user
 	 */
-	public void leaveConversation(Conversation conversation, User user);
+	void leaveConversation(Conversation conversation, User user);
 
 	/**
 	 * Create a new conversation
@@ -60,7 +60,7 @@ public interface ConversationManager {
 	 *            Set sticky
 	 * @return Conversation
 	 */
-	public Conversation createConversation(User user, Set<String> recipents,
-			String title, String body, boolean locked, boolean invite,
-			boolean sticky) throws SpamWarningException;
+	Conversation createConversation(User user, Set<String> recipents,
+									String title, String body, boolean locked, boolean invite,
+									boolean sticky) throws SpamWarningException;
 }

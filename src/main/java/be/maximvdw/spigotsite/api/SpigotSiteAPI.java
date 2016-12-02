@@ -16,26 +16,26 @@ public interface SpigotSiteAPI {
 	 * 
 	 * @return {@link be.maximvdw.spigotsite.api.user.UserManager}
 	 */
-	public UserManager getUserManager();
+	UserManager getUserManager();
 
 	/**
 	 * Get spigot resource manager
 	 * 
 	 * @return {@link be.maximvdw.spigotsite.api.resource.ResourceManager}
 	 */
-	public ResourceManager getResourceManager();
+	ResourceManager getResourceManager();
 
 	/**
 	 * Get spigot forum manager
 	 * 
 	 * @return {@link be.maximvdw.spigotsite.api.forum.ForumManager}
 	 */
-	public ForumManager getForumManager();
+	ForumManager getForumManager();
 
 	/**
 	 * Get spigot conversation manager
 	 * 
 	 * @return {@link be.maximvdw.spigotsite.api.user.ConversationManager}
 	 */
-	public ConversationManager getConversationManager();
+	ConversationManager getConversationManager();
 }
