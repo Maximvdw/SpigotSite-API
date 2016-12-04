@@ -54,6 +54,17 @@ public interface Conversation {
 	boolean isUnread();
 
 	/**
+	 * Set the unread status of a conversation
+	 *
+	 * @param user
+	 *            Authenticated user
+	 * @param unreadOrNot
+	 *            True to set unread, false to set read
+	 */
+	public void markAsUnread(User user,
+		 	boolean unreadOrNot) throws SpamWarningException;
+
+	/**
 	 * Get the last replier
 	 *
 	 * @return The last User to reply.

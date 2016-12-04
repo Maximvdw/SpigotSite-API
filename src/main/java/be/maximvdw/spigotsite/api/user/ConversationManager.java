@@ -32,6 +32,19 @@ public interface ConversationManager {
 							 String reply) throws SpamWarningException;
 
 	/**
+	 * Set the unread status of a conversation
+	 *
+	 * @param conversation
+	 *            Conversation
+	 * @param user
+	 *            Authenticated user
+	 * @param unreadOrNot
+	 *            True to set unread, false to set read
+	 */
+	public void markAsUnread(Conversation conversation, User user,
+			 boolean unreadOrNot) throws SpamWarningException;
+
+	/**
 	 * Leave a conversation
 	 * 
 	 * @param conversation
