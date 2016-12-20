@@ -170,7 +170,7 @@ public interface ResourceManager {
      *
      * @param resource Premium resource
      * @param user     The authenticated plugin author
-     * @param username Username to remove
+     * @param buyer     Buyer to remove
      */
-    void removeBuyer(PremiumResource resource, User user, String username);
+    void removeBuyer(PremiumResource resource, User user, int buyer);
 }
