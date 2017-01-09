@@ -8,12 +8,12 @@ public interface UserStatistics {
 	 * 
 	 * @return Join date
 	 */
-	public Date getJoinDate();
+	Date getJoinDate();
 
 	/**
 	 * Get forum post count
 	 * 
 	 * @return Post count
 	 */
-	public int getPostCount();
+	int getPostCount();
 }

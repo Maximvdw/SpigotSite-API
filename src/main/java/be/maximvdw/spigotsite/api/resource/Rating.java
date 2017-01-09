@@ -13,12 +13,12 @@ public interface Rating {
 	 * 
 	 * @return Integer between 0 and 5
 	 */
-	public int getRating();
+	int getRating();
 
 	/**
 	 * Get rating author
 	 * 
 	 * @return Spigot user
 	 */
-	public User getAuthor();
+	User getAuthor();
 }

@@ -52,6 +52,36 @@ public interface ConversationManager {
                                     boolean sticky) throws SpamWarningException;
 
     /**
+     * Create a new conversation
+     *
+     * @param user      Authenticated user that sends the message
+     * @param recipent  Username to send it to
+     * @param title     Title BB Code
+     * @param body      Body BB Code
+     * @param locked    Lock the conversation
+     * @param invite    Invite others to the conversation
+     * @param sticky    Set sticky
+     * @return Conversation
+     */
+    Conversation createConversation(User user, String recipient,
+                                    String title, String body, boolean locked, boolean invite,
+                                    boolean sticky) throws SpamWarningException;
+
+    /**
+     * Create a new conversation
+     *
+     * @param user      Authenticated user that sends the message
+     * @param recipent  Username to send it to
+     * @param title     Title BB Code
+     * @param body      Body BB Code
+     * @param locked    Lock the conversation
+     * @param invite    Invite others to the conversation
+     * @return Conversation
+     */
+    Conversation createConversation(User user, String recipient,
+                                    String title, String body, boolean locked, boolean invite) throws SpamWarningException;
+
+    /**
      * Mark a conversation as read
      *
      * @param user         Authenticated user
