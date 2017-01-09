@@ -66,11 +66,31 @@ public interface UserManager {
             throws InvalidCredentialsException, TwoFactorAuthenticationException;
 
     /**
+     * Authenticate a spigot user
+     *
+     * @param username Username or Email address
+     * @param password Password
+     * @param user     Logged off user with cookies
+     * @return Authenticated Spigot user
+     */
+    User authenticate(String username, String password, User user)
+            throws InvalidCredentialsException, TwoFactorAuthenticationException;
+
+
+    /**
      * Log off a spigot user
      *
      * @param user Authenticated Spigot user
      */
     void logOff(User user);
+
+    /**
+     * Log off a spigot user
+     *
+     * @param force Force clear the cookies
+     * @param user  Authenticated Spigot user
+     */
+    void logOff(User user, boolean force);
 
     /**
      * Check if the user is logged in
