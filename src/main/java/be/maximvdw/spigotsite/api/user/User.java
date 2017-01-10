@@ -37,7 +37,7 @@ public interface User {
      * Get purchased resources
      *
      * @return List of {@link be.maximvdw.spigotsite.api.resource.Resource}
-     * @throws ConnectionFailedException
+     * @throws ConnectionFailedException internet connection failed
      */
     List<Resource> getPurchasedResources()
             throws ConnectionFailedException;
