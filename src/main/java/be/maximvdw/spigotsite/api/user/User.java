@@ -47,21 +47,21 @@ public interface User {
      *
      * @return List of {@link be.maximvdw.spigotsite.api.resource.Resource}
      */
-    List<Resource> getCreatedResources();
+    List<Resource> getCreatedResources() throws ConnectionFailedException;
 
     /**
      * Get spigot user statistics
      *
      * @return {@link be.maximvdw.spigotsite.api.user.UserStatistics}
      */
-    UserStatistics getUserStatistics();
+    UserStatistics getUserStatistics() throws ConnectionFailedException;
 
     /**
      * Get spigot user private conversations
      *
      * @return List of conversation
      */
-    List<Conversation> getConversations();
+    List<Conversation> getConversations() throws ConnectionFailedException;
 
     /**
      * Get users last activity

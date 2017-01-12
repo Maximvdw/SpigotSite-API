@@ -74,7 +74,7 @@ public interface Conversation {
      * @param user   User that is replying
      * @param bbCode BB Code string
      */
-    void reply(User user, String bbCode) throws SpamWarningException;
+    void reply(User user, String bbCode) throws SpamWarningException, ConnectionFailedException;
 
     /**
      * Leave the conversation
