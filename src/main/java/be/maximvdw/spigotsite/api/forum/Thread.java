@@ -15,19 +15,19 @@ public interface Thread {
 	 * 
 	 * @return List of {@link be.maximvdw.spigotsite.api.forum.Post}
 	 */
-	public List<Post> getReplies();
+	List<Post> getReplies();
 
 	/**
 	 * Get original post
 	 * 
 	 * @return {@link be.maximvdw.spigotsite.api.forum.Post}
 	 */
-	public Post getOriginalPost();
+	Post getOriginalPost();
 
 	/**
 	 * Get thread creator
 	 * 
 	 * @return Thread creator
 	 */
-	public User getCreator();
+	User getCreator();
 }

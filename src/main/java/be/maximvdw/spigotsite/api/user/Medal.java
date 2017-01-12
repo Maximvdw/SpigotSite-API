@@ -11,19 +11,19 @@ public interface Medal {
 	 * 
 	 * @return Medal identifier
 	 */
-	public int getMedalId();
+	int getMedalId();
 
 	/**
 	 * Get medal name
 	 * 
 	 * @return Name
 	 */
-	public String getName();
+	String getName();
 
 	/**
 	 * Get medal description
 	 * 
 	 * @return Medal description
 	 */
-	public String getDescription();
+	String getDescription();
 }

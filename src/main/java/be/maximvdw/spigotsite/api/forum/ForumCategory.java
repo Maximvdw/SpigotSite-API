@@ -13,5 +13,5 @@ public interface ForumCategory {
 	 * 
 	 * @return List of {@link be.maximvdw.spigotsite.api.forum.Forum}
 	 */
-	public List<Forum> getForums();
+	List<Forum> getForums();
 }

@@ -3,6 +3,7 @@ package be.maximvdw.spigotsite.api.user;
 import java.util.Date;
 import java.util.List;
 
+import be.maximvdw.spigotsite.api.exceptions.ConnectionFailedException;
 import be.maximvdw.spigotsite.api.exceptions.SpamWarningException;
 
 /**
@@ -79,20 +80,23 @@ public interface Conversation {
      * Leave the conversation
      *
      * @param user Authenticated user
+     * @throws ConnectionFailedException Connection to Spigot failed
      */
-    void leave(User user);
+    void leave(User user) throws ConnectionFailedException;
 
     /**
      * Mark conversation as read
      *
      * @param user Authenticated user
+     * @throws ConnectionFailedException Connection to Spigot failed
      */
-    void markAsRead(User user);
+    void markAsRead(User user) throws ConnectionFailedException;
 
     /**
      * Mark conversation as unread
      *
      * @param user Authenticated user
+     * @throws ConnectionFailedException Connection to Spigot failed
      */
-    void markAsUnread(User user);
+    void markAsUnread(User user) throws ConnectionFailedException;
 }

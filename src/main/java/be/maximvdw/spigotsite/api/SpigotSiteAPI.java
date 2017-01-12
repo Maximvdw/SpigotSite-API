@@ -27,7 +27,7 @@ public interface SpigotSiteAPI {
 
 	/**
 	 * Get spigot forum manager
-	 * 
+	 *
 	 * @return {@link be.maximvdw.spigotsite.api.forum.ForumManager}
 	 */
 	ForumManager getForumManager();

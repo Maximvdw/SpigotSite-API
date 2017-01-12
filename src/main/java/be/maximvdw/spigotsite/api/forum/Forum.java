@@ -13,5 +13,5 @@ public interface Forum {
 	 * 
 	 * @return List of {{@link be.maximvdw.spigotsite.api.forum.Forum}
 	 */
-	public List<Forum> getSubForums();
+	List<Forum> getSubForums();
 }

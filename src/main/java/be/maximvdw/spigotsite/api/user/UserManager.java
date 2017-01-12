@@ -2,6 +2,7 @@ package be.maximvdw.spigotsite.api.user;
 
 import java.util.List;
 
+import be.maximvdw.spigotsite.api.exceptions.ConnectionFailedException;
 import be.maximvdw.spigotsite.api.user.exceptions.InvalidCredentialsException;
 import be.maximvdw.spigotsite.api.user.exceptions.TwoFactorAuthenticationException;
 
@@ -16,24 +17,27 @@ public interface UserManager {
      *
      * @param userid User identifier
      * @return {@link be.maximvdw.spigotsite.api.user.User}
+     * @throws ConnectionFailedException Connection to Spigot failed
      */
-    User getUserById(int userid);
+    User getUserById(int userid) throws ConnectionFailedException;
 
     /**
      * Get a list of users by their name
      *
      * @param name Name
      * @return List of users
+     * @throws ConnectionFailedException Connection to Spigot failed
      */
-    List<String> getUsernamesByName(String name);
+    List<String> getUsernamesByName(String name) throws ConnectionFailedException;
 
     /**
      * Get user by name
      *
      * @param name username
      * @return User instance
+     * @throws ConnectionFailedException Connection to Spigot failed
      */
-    User getUserByName(String name);
+    User getUserByName(String name) throws ConnectionFailedException;
 
     /**
      * Get {@link be.maximvdw.spigotsite.api.user.User} by identifier
@@ -41,8 +45,9 @@ public interface UserManager {
      * @param userid User identifier
      * @param user   Authenticated {@link be.maximvdw.spigotsite.api.user.User}
      * @return {@link be.maximvdw.spigotsite.api.user.User}
+     * @throws ConnectionFailedException Connection to Spigot failed
      */
-    User getUserById(int userid, User user);
+    User getUserById(int userid, User user) throws ConnectionFailedException;
 
     /**
      * Authenticate a spigot user
@@ -50,9 +55,10 @@ public interface UserManager {
      * @param username Username or Email address
      * @param password Password
      * @return Authenticated Spigot user
+     * @throws ConnectionFailedException Connection to Spigot failed
      */
     User authenticate(String username, String password)
-            throws InvalidCredentialsException, TwoFactorAuthenticationException;
+            throws InvalidCredentialsException, TwoFactorAuthenticationException, ConnectionFailedException;
 
     /**
      * Authenticate a spigot user
@@ -61,9 +67,10 @@ public interface UserManager {
      * @param password                      Password
      * @param twoFactorAuthenticationSecret Two factory authentication BASE 64 secret
      * @return Authenticated Spigot user
+     * @throws ConnectionFailedException Connection to Spigot failed
      */
     User authenticate(String username, String password, String twoFactorAuthenticationSecret)
-            throws InvalidCredentialsException, TwoFactorAuthenticationException;
+            throws InvalidCredentialsException, TwoFactorAuthenticationException, ConnectionFailedException;
 
     /**
      * Authenticate a spigot user
@@ -72,53 +79,60 @@ public interface UserManager {
      * @param password Password
      * @param user     Logged off user with cookies
      * @return Authenticated Spigot user
+     * @throws ConnectionFailedException Connection to Spigot failed
      */
     User authenticate(String username, String password, User user)
-            throws InvalidCredentialsException, TwoFactorAuthenticationException;
+            throws InvalidCredentialsException, TwoFactorAuthenticationException, ConnectionFailedException;
 
 
     /**
      * Log off a spigot user
      *
      * @param user Authenticated Spigot user
+     * @throws ConnectionFailedException Connection to Spigot failed
      */
-    void logOff(User user);
+    void logOff(User user) throws ConnectionFailedException;
 
     /**
      * Log off a spigot user
      *
      * @param force Force clear the cookies
      * @param user  Authenticated Spigot user
+     * @throws ConnectionFailedException Connection to Spigot failed
      */
-    void logOff(User user, boolean force);
+    void logOff(User user, boolean force) throws ConnectionFailedException;
 
     /**
      * Check if the user is logged in
      *
      * @param user User to check
      * @return logged in boolean
+     * @throws ConnectionFailedException Connection to Spigot failed
      */
-    boolean isLoggedIn(User user);
+    boolean isLoggedIn(User user) throws ConnectionFailedException;
 
     /**
      * Get user ranks
      *
      * @return List of {@link be.maximvdw.spigotsite.api.user.UserRank}
+     * @throws ConnectionFailedException Connection to Spigot failed
      */
-    List<UserRank> getUserRanks();
+    List<UserRank> getUserRanks() throws ConnectionFailedException;
 
     /**
      * Get users by rank
      *
      * @param rank
      * @return List of {@link be.maximvdw.spigotsite.api.user.User}
+     * @throws ConnectionFailedException Connection to Spigot failed
      */
-    List<User> getUsersByRank(UserRank rank);
+    List<User> getUsersByRank(UserRank rank) throws ConnectionFailedException;
 
     /**
      * Get online members
      *
      * @return List of members
+     * @throws ConnectionFailedException Connection to Spigot failed
      */
-    List<User> getOnlineUsers();
+    List<User> getOnlineUsers() throws ConnectionFailedException;
 }
