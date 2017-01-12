@@ -2,6 +2,7 @@ package be.maximvdw.spigotsite.api.resource;
 
 import java.util.List;
 
+import be.maximvdw.spigotsite.api.exceptions.ConnectionFailedException;
 import be.maximvdw.spigotsite.api.user.User;
 
 /**
@@ -45,7 +46,7 @@ public interface PremiumResource extends Resource {
 	 * 
 	 * @return Resource buyers
 	 */
-    List<User> getBuyers();
+    List<Buyer> getBuyers();
 
 	/**
 	 * Add a buyer to a spigot premium resource
@@ -55,7 +56,7 @@ public interface PremiumResource extends Resource {
 	 * @param buyer
 	 *            The buyer
 	 */
-    void addBuyer(User user, User buyer);
+    void addBuyer(User user, User buyer) throws ConnectionFailedException;
 
 	/**
 	 * Add a buyer to a spigot premium resource
@@ -65,7 +66,7 @@ public interface PremiumResource extends Resource {
 	 * @param userid
 	 *            User identifier
 	 */
-    void addBuyer(User user, int userid);
+    void addBuyer(User user, int userid) throws ConnectionFailedException;
 
 	/**
 	 * Add a buyer to a spigot premium resource
@@ -75,7 +76,7 @@ public interface PremiumResource extends Resource {
 	 * @param username
 	 *            The text username
 	 */
-    void addBuyer(User user, String username);
+    void addBuyer(User user, String username) throws ConnectionFailedException;
 
 	/**
 	 * Add a buyer to a spigot premium resource
@@ -85,7 +86,7 @@ public interface PremiumResource extends Resource {
 	 * @param buyers
 	 *            A list of buyers
 	 */
-    void addBuyers(User user, List<User> buyers);
+    void addBuyers(User user, List<User> buyers) throws ConnectionFailedException;
 
 	/**
 	 * Add a buyer to a spigot premium resource
@@ -95,5 +96,5 @@ public interface PremiumResource extends Resource {
 	 * @param usernames
 	 *            A list of usernames
 	 */
-    void addBuyers(User user, String[] usernames);
+    void addBuyers(User user, String[] usernames) throws ConnectionFailedException;
 }
