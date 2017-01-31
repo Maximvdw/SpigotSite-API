@@ -41,6 +41,14 @@ public interface ResourceManager {
     List<Resource> getResourcesByUser(User user) throws ConnectionFailedException;
 
     /**
+     * Get new resources since last resource id
+     * @param lastResourceId last resource id
+     * @return list of resources
+     * @throws ConnectionFailedException
+     */
+    List<Resource> getNewResources(int lastResourceId) throws ConnectionFailedException;
+
+    /**
      * Get a list of {@link be.maximvdw.spigotsite.api.resource.Resource} from a
      * {@link be.maximvdw.spigotsite.api.user.User}
      *
