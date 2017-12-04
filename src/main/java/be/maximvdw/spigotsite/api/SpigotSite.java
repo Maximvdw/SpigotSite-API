@@ -4,7 +4,7 @@ public final class SpigotSite {
 	/* Spigot Site API */
 	private static SpigotSiteAPI api = null;
 	/* Spigot Site API Version */
-	private static String version = "0.1.1-SNAPSHOT";
+	private static String version = "0.2.1-SNAPSHOT";
 
 	/**
 	 * Get spigot site API
