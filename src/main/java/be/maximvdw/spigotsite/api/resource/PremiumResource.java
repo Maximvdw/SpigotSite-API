@@ -94,4 +94,20 @@ public interface PremiumResource extends Resource {
      * @return is buyer
      */
     boolean isBuyer(User user);
+
+    /**
+     * Get buyer by name
+     *
+     * @param name buyer name
+     * @return buyer
+     */
+    Buyer getBuyerByName(String name);
+
+    /**
+     * Get buyer by id
+     *
+     * @param id id
+     * @return buyer
+     */
+    Buyer getBuyerByUserId(int id);
 }
