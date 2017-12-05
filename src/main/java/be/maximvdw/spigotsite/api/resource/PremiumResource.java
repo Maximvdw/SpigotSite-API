@@ -1,7 +1,6 @@
 package be.maximvdw.spigotsite.api.resource;
 
 import java.util.List;
-import java.util.Set;
 
 import be.maximvdw.spigotsite.api.exceptions.ConnectionFailedException;
 import be.maximvdw.spigotsite.api.user.User;
@@ -45,7 +44,7 @@ public interface PremiumResource extends Resource {
      *
      * @return Resource buyers
      */
-    Set<Buyer> getBuyers();
+    List<Buyer> getBuyers();
 
     /**
      * Add a buyer to a spigot premium resource

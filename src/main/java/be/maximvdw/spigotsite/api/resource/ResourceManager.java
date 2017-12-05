@@ -1,7 +1,6 @@
 package be.maximvdw.spigotsite.api.resource;
 
 import java.util.List;
-import java.util.Set;
 
 import be.maximvdw.spigotsite.api.exceptions.ConnectionFailedException;
 import be.maximvdw.spigotsite.api.user.User;
@@ -137,7 +136,7 @@ public interface ResourceManager {
      * @return List of {@link be.maximvdw.spigotsite.api.resource.Buyer}
      * @throws ConnectionFailedException Connection to Spigot failed
      */
-    Set<Buyer> getPremiumResourceBuyers(PremiumResource resource,
+    List<Buyer> getPremiumResourceBuyers(PremiumResource resource,
                                         User user) throws ConnectionFailedException;
 
     /**
