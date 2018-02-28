@@ -3,6 +3,7 @@ package be.maximvdw.spigotsite.api.user;
 import java.util.List;
 
 import be.maximvdw.spigotsite.api.exceptions.ConnectionFailedException;
+import be.maximvdw.spigotsite.api.forum.ProfilePost;
 import be.maximvdw.spigotsite.api.user.exceptions.InvalidCredentialsException;
 import be.maximvdw.spigotsite.api.user.exceptions.TwoFactorAuthenticationException;
 
@@ -135,4 +136,15 @@ public interface UserManager {
      * @throws ConnectionFailedException Connection to Spigot failed
      */
     List<User> getOnlineUsers() throws ConnectionFailedException;
+
+    /**
+     * Get a list of profile posts
+     *
+     * @param user    The logged in user (required for hidden profiles)
+     * @param profile The profile you want to get the posts from
+     * @param count   amount of posts to fetch
+     * @return list of profile posts
+     * @throws ConnectionFailedException
+     */
+    List<ProfilePost> getProfilePosts(User user, User profile, int count) throws ConnectionFailedException;
 }

@@ -81,11 +81,10 @@ public interface User {
     /**
      * Get a list of profile posts
      *
-     * @param user    The logged in user (required for hidden profiles)
-     * @param profile The profile you want to get the posts from
-     * @param count   amount of posts to fetch
+     * @param authenticatedUser  The logged in user (required for hidden profiles)
+     * @param count amount of posts to fetch
      * @return list of profile posts
      * @throws ConnectionFailedException
      */
-    List<ProfilePost> getProfilePosts(User user, User profile, int count) throws ConnectionFailedException;
+    List<ProfilePost> getProfilePosts(User authenticatedUser, int count) throws ConnectionFailedException;
 }
