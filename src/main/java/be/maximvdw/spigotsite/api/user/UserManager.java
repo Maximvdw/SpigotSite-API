@@ -3,6 +3,7 @@ package be.maximvdw.spigotsite.api.user;
 import java.util.List;
 
 import be.maximvdw.spigotsite.api.exceptions.ConnectionFailedException;
+import be.maximvdw.spigotsite.api.exceptions.PermissionException;
 import be.maximvdw.spigotsite.api.forum.ProfilePost;
 import be.maximvdw.spigotsite.api.user.exceptions.InvalidCredentialsException;
 import be.maximvdw.spigotsite.api.user.exceptions.TwoFactorAuthenticationException;
@@ -20,7 +21,7 @@ public interface UserManager {
      * @return {@link be.maximvdw.spigotsite.api.user.User}
      * @throws ConnectionFailedException Connection to Spigot failed
      */
-    User getUserById(int userid) throws ConnectionFailedException;
+    User getUserById(int userid) throws ConnectionFailedException, PermissionException;
 
     /**
      * Get a list of users by their name
@@ -146,5 +147,5 @@ public interface UserManager {
      * @return list of profile posts
      * @throws ConnectionFailedException
      */
-    List<ProfilePost> getProfilePosts(User user, User profile, int count) throws ConnectionFailedException;
+    List<ProfilePost> getProfilePosts(User user, User profile, int count) throws ConnectionFailedException , PermissionException;
 }
