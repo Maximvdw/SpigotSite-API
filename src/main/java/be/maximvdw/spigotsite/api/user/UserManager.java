@@ -49,7 +49,7 @@ public interface UserManager {
      * @return {@link be.maximvdw.spigotsite.api.user.User}
      * @throws ConnectionFailedException Connection to Spigot failed
      */
-    User getUserById(int userid, User user) throws ConnectionFailedException;
+    User getUserById(int userid, User user) throws ConnectionFailedException, PermissionException;
 
     /**
      * Authenticate a spigot user
