@@ -3,6 +3,7 @@ package be.maximvdw.spigotsite.api.user;
 import java.util.List;
 
 import be.maximvdw.spigotsite.api.exceptions.ConnectionFailedException;
+import be.maximvdw.spigotsite.api.exceptions.PermissionException;
 import be.maximvdw.spigotsite.api.forum.ProfilePost;
 import be.maximvdw.spigotsite.api.resource.Resource;
 
@@ -86,5 +87,5 @@ public interface User {
      * @return list of profile posts
      * @throws ConnectionFailedException
      */
-    List<ProfilePost> getProfilePosts(User authenticatedUser, int count) throws ConnectionFailedException;
+    List<ProfilePost> getProfilePosts(User authenticatedUser, int count) throws ConnectionFailedException, PermissionException;
 }
