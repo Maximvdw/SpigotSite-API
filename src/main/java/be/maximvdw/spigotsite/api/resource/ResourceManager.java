@@ -3,6 +3,7 @@ package be.maximvdw.spigotsite.api.resource;
 import java.util.List;
 
 import be.maximvdw.spigotsite.api.exceptions.ConnectionFailedException;
+import be.maximvdw.spigotsite.api.exceptions.PermissionException;
 import be.maximvdw.spigotsite.api.user.User;
 
 /**
@@ -157,7 +158,7 @@ public interface ResourceManager {
      * @param userid   User identifier
      * @throws ConnectionFailedException Connection to Spigot failed
      */
-    void addBuyer(PremiumResource resource, User user, int userid) throws ConnectionFailedException;
+    void addBuyer(PremiumResource resource, User user, int userid) throws ConnectionFailedException, PermissionException;
 
     /**
      * Add a buyer to a spigot premium resource
